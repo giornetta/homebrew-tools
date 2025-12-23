@@ -10,7 +10,7 @@ class Giornetta < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/giornetta/cli/releases/download/v1.4.8-rc4/civo-1.4.8-rc4-darwin-amd64.tar.gz"
-      sha256 "b8bc507bece9ee6656ae505587be7c1568449c467989e2d9c13cd99efa36226d"
+      sha256 "fafb0e6d3f03603b18c8ca1173f2a7be42d4941c20e97e00d165e41589f20485"
 
       def install
         bin.install "civo"
@@ -18,7 +18,7 @@ class Giornetta < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/giornetta/cli/releases/download/v1.4.8-rc4/civo-1.4.8-rc4-darwin-arm64.tar.gz"
-      sha256 "2b11a98478925cfaf02f652f5f39353c99f0b033b758bc75b12caac158386d71"
+      sha256 "56bf3619113012f39b9fb133b42e9c606e922f6e9251e570dc313cf738bd3c86"
 
       def install
         bin.install "civo"
@@ -29,21 +29,21 @@ class Giornetta < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/giornetta/cli/releases/download/v1.4.8-rc4/civo-1.4.8-rc4-linux-amd64.tar.gz"
-      sha256 "4b84647ad487e99da9526f5d7e84c9e28237696a12947b10e45aa605bf5a4770"
+      sha256 "3329fc07d0de0cf9d0e7430cc838c3c6f3d370871f0093db3ad6f237e62e9378"
       def install
         bin.install "civo"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/giornetta/cli/releases/download/v1.4.8-rc4/civo-1.4.8-rc4-linux-arm.tar.gz"
-      sha256 "9342d662a4cc4b81243770c783c20ff84a2b05fa12589966117cc558e67ecbc7"
+      sha256 "67c83b8cfddb67d66bca20bf90375411b5d592f8caba3bca7d9de7ada59a52a3"
       def install
         bin.install "civo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/giornetta/cli/releases/download/v1.4.8-rc4/civo-1.4.8-rc4-linux-arm64.tar.gz"
-      sha256 "91524bb264b5f2cfb0afde4e05709fc3f1ee7af59fd8794722e6339e56be9ef1"
+      sha256 "d7053d6e88c9414d3e0a85b0045caff1f5c10ca9aa94085695966fb63fcc6616"
       def install
         bin.install "civo"
       end
